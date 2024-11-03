@@ -1,0 +1,137 @@
+:root{
+    /* primary colors  */
+--Cyan-400: hsl(179, 61%, 44%);
+--Cyan-300: hsl(179, 47%, 52%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--Light-Gray);
+}
+.wrapper{
+    width: 80%;   
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.Flex_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top_section{
+    background-color: #fff;
+    padding-block: 1rem;
+    padding-inline: 2rem 3rem;
+}
+
+.top_section h2{
+    color: var(--Cyan-400);
+    padding-bottom: 1rem;
+}
+
+.top_section h3{
+    color: var(--Bright-Yellow);
+}
+
+.top_section p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--Grayish-Blue);
+}
+
+
+.middle_section{
+    background-color: var(--Cyan-400);
+    padding-block: 1rem;
+    padding-inline: 2rem 2rem;
+}
+
+.middle_section h3{
+    color: #fafafa;
+    font-size: 1.3rem;
+}
+
+.middle_section .price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff9d;
+}
+
+.middle_section p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffffd0;
+}
+
+.middle_section span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fafafa;
+}
+
+.middle_section .btn{
+    background-color: var(--Bright-Yellow);
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffffdf;
+    padding-block: .8rem;
+    margin-block: 2rem;
+    border: none;
+    border-radius: 7px;
+    box-shadow: -3px 3px 30px #0000003e;
+}
+
+.buttom_section{
+    background-color: var(--Cyan-300);
+    padding-block: 1rem;
+    padding-inline: 2rem 3rem;
+}
+
+.buttom_section{
+    line-height: 2;
+}
+
+.buttom_section p{
+    color: #ebf5fac1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 82%;
+}
+
+
+@media (min-width: 40em) {
+    .wrapper{
+        width: 80%;
+        max-width: 800px;
+    }
+
+    .top_section p{
+        width: 80%;
+    }
+
+    .Flex_section{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: 0.5fr 0.3fr
+    }
+}
